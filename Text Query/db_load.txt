@@ -1,0 +1,5 @@
+sort recs.txt >newrecs.txt
+db_load -f newrecs.txt -T -t hash re.idx
+db_load -f newterms.txt -T -t btree te.idx
+db_load -f newemails.txt -T -t btree em.idx
+db_load -f newdatas.txt -T -t btree da.idx
